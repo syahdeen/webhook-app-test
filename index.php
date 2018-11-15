@@ -3,7 +3,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 
 //PROSES
 if($method == 'POST'){
-	$requestBody = file_get_contents('php://input');\
+	$requestBody = file_get_contents('php://input');
 	$json = json_encode($requestBody);
 	$text = $json->result->parameters->text;
 	
